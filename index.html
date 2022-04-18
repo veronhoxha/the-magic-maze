@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The magic maze</title>
+  <link rel='shortcut icon' href='img/maze.jpg' type='image/x-icon'>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+    <div id="grid-container">
+        <div class="grid-item"><img src="img/6.png" class="img"></div>
+        <div class="grid-item"><img id="myImg"></div>
+        <div class="grid-item"><img src="img/3.png" class="img"> </div>
+        <div class="grid-item"><img id="myImg1"></div>  
+        <div class="grid-item"><img src="img/3.png" class="img"></div>
+        <div class="grid-item"><img id="myImg2"></div>
+        <div class="grid-item"><img src="img/7.png" class="img"></div>  
+        <div class="grid-item"><img id="myImg3"></div>
+        <div class="grid-item"><img id="myImg4"></div>
+        <div class="grid-item"><img id="myImg5"></div>  
+        <div class="grid-item"><img id="myImg6"></div>
+        <div class="grid-item"><img id="myImg7"></div>
+        <div class="grid-item"><img id="myImg8"></div>  
+        <div class="grid-item"><img id="myImg9"></div>
+        <div class="grid-item"><img src="img/11.png" class="img"></div>
+        <div class="grid-item"><img id="myImg10"></div> 
+        <div class="grid-item"><img src="img/12.png" class="img"></div>
+        <div class="grid-item"><img id="myImg11"></div>  
+        <div class="grid-item"><img src="img/3.png" class="img"></div>
+        <div class="grid-item"><img id="myImg12"></div>
+        <div class="grid-item"><img src="img/4.png" class="img"></div>  
+        <div class="grid-item"><img id="myImg13"></div>
+        <div class="grid-item"><img id="myImg14"></div>
+        <div class="grid-item"><img id="myImg15"></div>  
+        <div class="grid-item"><img id="myImg16"></div>
+        <div class="grid-item"><img id="myImg17"></div>
+        <div class="grid-item"><img id="myImg18"></div> 
+        <div class="grid-item"><img id="myImg19"></div>
+        <div class="grid-item"><img src="img/2.png" class="img"></div>
+        <div class="grid-item"><img id="myImg20"></div> 
+        <div class="grid-item"><img src="img/13.png" class="img"></div>
+        <div class="grid-item"><img id="myImg21"></div>  
+        <div class="grid-item"><img src="img/4.png" class="img"></div>
+        <div class="grid-item"><img id="myImg22"></div>
+        <div class="grid-item"><img src="img/14.png" class="img"></div>  
+        <div class="grid-item"><img id="myImg23"></div>
+        <div class="grid-item"><img id="myImg24"></div>
+        <div class="grid-item"><img id="myImg25"></div>  
+        <div class="grid-item"><img id="myImg26"></div>
+        <div class="grid-item"><img id="myImg27"></div>
+        <div class="grid-item"><img id="myImg28"></div>
+        <div class="grid-item"><img id="myImg29"></div>
+        <div class="grid-item"><img src="img/8.png" class="img"></div>
+        <div class="grid-item"><img id="myImg30"></div> 
+        <div class="grid-item"><img src="img/5.png" class="img"></div>
+        <div class="grid-item"><img id="myImg31"></div>  
+        <div class="grid-item"><img src="img/5.png" class="img"></div>
+        <div class="grid-item"><img id="myImg32"></div>
+        <div class="grid-item"><img src="img/9.png" class="img"></div>  
+      </div>
+
+      <div id="test"></div>
+
+      <p><i class="arrow right2" id="right2"></i></p>
+      <p><i class="arrow right" id="right"></i></p>
+      <p><i class="arrow right1" id="right1"></i></p>
+      <p><i class="arrow left" id="left"></i></p>
+      <p><i class="arrow left1" id="left1"></i></p>
+      <p><i class="arrow left2" id="left2"></i></p>
+      <p><i class="arrow down" id="down"></i></p>
+      <p><i class="arrow down1" id="down1"></i></p>
+      <p><i class="arrow down2" id="down2"></i></p>
+      <p><i class="arrow up" id="up"></i></p>
+      <p><i class="arrow up1" id="up1"></i></p>
+      <p><i class="arrow up2" id="up2"></i></p>
+
+      <div class="player">
+       <i> Player information: </i> <br><br>
+        - Player: <b style="color: lightcoral">red</b>  <br>
+        - Form: <b style="color: lightcoral">circle</b> <br>
+        - Starting position: <b style="color: lightcoral">right left corner</b> <br>
+        - The actual treasure card: <b style="color: lightcoral"> NONE</b> <br>
+        - Found/all treasures: <b style="color: lightcoral"> N/A</b>
+     </div>
+
+      
+      <div class="square all_squares"></div>
+      <div class="square1 all_squares"></div>
+      <div class="square2 all_squares"></div>
+      <div class="square5 all_squares"></div>
+      <div class="square4 all_squares"></div>
+      <div class="square3 all_squares"></div>
+      <div class="square8 all_squares"></div>
+      <div class="square7 all_squares"></div>
+      <div class="square6 all_squares"></div>    
+      <div class="square11 all_squares"><img id="myImg33"></div>
+      <div class="square10 all_squares"></div>
+      <div class="square9 all_squares"></div>
+         
+      <div class="start">
+
+        <h3 id="s">Select number of players</h3>
+        <h3 id="ss">Select number of treasure cards</h3>
+
+        <div class="select">
+          <select name="slct" id="slct">
+              <option value="player1">1</option>
+              <option value="player2" selected="selected">2</option>
+              <option value="player3">3</option>
+              <option value="player4">4</option>
+          </select>
+      </div>
+
+      <div class="select1">
+        <select name="slct1" id="slct1">
+            <option value="1">1</option>
+            <option value="2" selected="selected">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+        </select>
+    </div>
+
+        <h1>THE MAGIC MAZE</h1>
+        <button type='button' class="in button2" id="bb"><h2>HOW TO PLAY THE GAME ↓ ?</h2> </button>
+        <p id='demo' style='display: none' >The rooms int maze are symbolized by a 7x7 square grid cells. 
+          For each room we know that which wall has a door. 
+          If there are two doors in the contact wall of two neighbouring rooms, you can go from one room to another. 
+          The even rows and columns in the grid can be slided, the other rooms are fixed throughout the game.
+           By sliding the rooms in the grid, doors and passages open through which players can move in the maze. 
+           By cleverly sliding the rooms players try to find their way to the treasures. 
+           The first player to find all their treasures and return to the starting square is the winner.
+           At the beginning of the game we put the rooms in random order and in random direction to the free fields of the game board. 
+           There should be one room remaining. 
+           During the game we will always use the extra room to slide the rest of the rooms. 
+           In the game you have to find up to 24 treasures. 
+           These are randomly placed on the board so that only one treasure can be in a room and can not be placed in the corner. 
+           For each treasure there is a card. 
+           We shuffle these treasure cards and divide them evenly among the players and revealing the top card.
+           Playing pieces are placed in separate corners of the board.
+           During the game each player has to find his/her revealed treasure card (that can be seen by others). 
+           The player tries to get to the room showing the same treasure as on this card. 
+           For this the player needs to move the maze, and after that move the playing piece.
+          Moving the maze is done as follows: the player inserts the extra room into the game board where one of the arrows shows the slidable rows and columns, until another room is pushed out of the maze on the opposite side. The only exception: The room cannot be inserted back into the board at the same place where it was pushed out. So you cannot undo the previous player's move. If the room you push out has a playing piece on it, put this piece on the opposite side of the board on the room that was just placed. The treasures always move with the rooms.
+          Once you have moved the maze, you can move your playing piece.
+           You can occupy any square that you can move your piece to directly, without interruption. 
+          You can move your playing piece as far as you like. Or, you can leave your playing piece where it is. 
+          There can be more than one playing piece in one room: playing pieces do not hit each other.
+           If you are unable to get to the treasure you are searching for, you can move your playing piece into a position that gives you a good starting point for your next turn. 
+           Once you find the treasure you are looking for, reveal your next treasure card. 
+           On your next turn, find your way to this treasure on the game board.
+          Now it’s the next player’s turn. This player inserts the extra room into the game board before moving their playing piece, and so on.
+          The game is over as soon as a player has found all their treasure cards and returned their playing piece to its starting position. 
+          The first player to do this is the winner.
+        </p>
+        <button id="button2" class="in button1"> START THE GAME </button>
+      </div>
+      <script src="index.js" ></script>
+</body>
+</html>
